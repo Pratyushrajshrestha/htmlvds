@@ -19,12 +19,18 @@
  <!-- Contact Section -->
  <h2>Contact:</h2>
  <section id="contact">
-     <form>
-       <input type="text" placeholder="Name" required><br>
-       <input type="email" placeholder="Email" required><br>
-       <textarea placeholder="Message" required></textarea><br>
-       <button type="submit">Send Message</button>
-     </form>
+       <form action="https://formspree.io/f/xjkgojva" method="POST">
+        <label>Your email:
+          <input type="email" name="email">
+        </label>
+        <br>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
  </section>
 </body>
 <footer>
